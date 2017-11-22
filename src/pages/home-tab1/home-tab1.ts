@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { App, IonicPage, NavController } from 'ionic-angular';
+import { App, NavController } from 'ionic-angular';
 
-@IonicPage()
+import { AboutPage } from '../about/about';
+
 @Component({
   selector: 'page-home-tab-one',
   templateUrl: 'home-tab1.html'
@@ -16,7 +17,7 @@ export class HomeTab1Page {
   }
 
   buttonClick() {
-    // this.navCtrl.push("AboutPage")
-    this.appCtrl.getRootNavs()[0].push('AboutPage')
+    // this.navCtrl.push(AboutPage)
+    this.appCtrl.getRootNavs()[0].push(AboutPage)
   }
 }
